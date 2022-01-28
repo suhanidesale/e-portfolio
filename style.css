@@ -161,6 +161,9 @@ section{
 }
 
 .home-img img{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
   width: 80%;
 }
 
