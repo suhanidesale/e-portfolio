@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>eportfolio</title>
 </head>
 
@@ -18,8 +19,9 @@
         <ul class="navbar">
             <li><a href="#home">Home</a> </li>
             <li><a href="#about">About</a> </li>
-            <li><a href="#skills">Skilsl</a> </li>
-            <li><a href="#services">Services</a> </li>
+            <li><a href="#skills">Skills</a> </li>
+            <li><a href="#certificates">Certificates</a> </li>
+            <li><a href="#lor">LOR</a> </li>
             <li><a href="#projects">Projects</a> </li>
             <li><a href="#contact">Contact</a> </li>
             <div class="bx bx-moon" id="darkmode"></div>
@@ -146,25 +148,76 @@
         </div>
 
     </section>
-    <section class="services" id="services">
+    <section class="certificates" id="certificates">
         <div class="heading">
-            <h2>Services</h2>
-            <span>My Services</span>
+            <h2>Certificates</h2>
+            <span>My Certificates</span>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images\certificate img.jpg" ></div>
+                    <div class="swiper-slide"><img src="images\certificate img.jpg" ></div>
+                    <div class="swiper-slide"><img src="images\certificate img.jpg" ></div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+              
+            </div>
+        
+    </section>
+    <section class="lor" id="lor">
+        <div class="heading">
+            <h2>Letter Of Recommendation</h2>
+            <span>My LOR</span>
         </div>
-        <div class="services-content">
-            <div class="services-box">
+        <div class="certificates-content">
+            <div class="certificates-box">
+                <img src="images\about.jfif" alt="">
+                <h3>By Mr. xyz</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="certificates-box">
+                <img src="images\about.jfif" alt="">
+                <h3>By Mr. xyz</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="certificates-box">
+                <img src="images\about.jfif" alt="">
+                <h3>By Mr. xyz</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="heading">
+            <h2>projects</h2>
+            <span>My projects</span>
+        </div>
+        <div class="certificates-content">
+            <div class="certificates-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>Web <br>Development</h3>
                 <a href="#">Learn More</a>
             </div>
 
-            <div class="services-box">
+            <div class="certificates-box">
                 <i class='bx bx-server'></i>
                 <h3>Backend<br>Development</h3>
                 <a href="#">Learn More</a>
             </div>
 
-            <div class="services-box">
+            <div class="certificates-box">
                 <i class='bx bx-brush'></i>
                 <h3>UI/UX<br>Design</h3>
                 <a href="#">Learn More</a>
@@ -195,7 +248,8 @@
             <a href="#"><i class='bx bxl-gmail'></i></a>
         </div>
     </div>
-    
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 
 </body>
